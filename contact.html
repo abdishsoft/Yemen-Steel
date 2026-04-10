@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="تواصل مع يمن استيل للمقاولات والبناء." />
+  <title>يمن استيل - اتصل بنا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contact">تخطي إلى المحتوى</a>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <header id="navbar" class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="يمن استيل">
+         <span class="logo-name"> يمن <em> استيل</em></span>
+        <img src="building.png" alt="">
+      </a>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <button class="menu-toggle" id="mobile-menu" type="button"
+                aria-label="فتح القائمة" aria-controls="primary-nav" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul id="primary-nav" class="nav-links" role="list">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="projects.html">أعمالنا</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html" class="active">اتصل بنا</a></li>
+         
+        </ul>
+        <div class="nav-overlay" data-nav-overlay></div>
+      </nav>
+      <a href="contact.html" class="btn-quote">
+        <span>عرض سعر</span>
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section id="contact" class="contact section-py">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-label">اتصل بنا</span>
+          <h2>نحن هنا لمساعدتك</h2>
+          <p>أرسل لنا رسالتك وسنتواصل معك في أقرب وقت</p>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-card reveal">
+            <h3>معلومات التواصل</h3>
+            <p class="cc-sub">نسعد بخدمتك على مدار أيام العمل</p>
+            <ul class="ci-list" role="list">
+              <li>
+                <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div><strong>العنوان</strong><span>صنعاء — شارع القيادة، مقابل جامعة العلوم والتكنولوجيا</span></div>
+              </li>
+              <li>
+                <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+                <div><strong>الهاتف</strong><span>+967774984145</span><span>+967774984145</span></div>
+              </li>
+              <li>
+                <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                <div><strong>البريد الإلكتروني</strong><span>alselwiabdulsamad@gmail.com</span></div>
+              </li>
+              <li>
+                <div class="ci-icon"><i class="fas fa-clock"></i></div>
+                <div><strong>أوقات العمل</strong><span>السبت — الخميس: 8ص — 6م</span></div>
+              </li>
+            </ul>
+            <div class="cc-social" aria-label="تواصل اجتماعي">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" style="--delay:150ms" novalidate>
+            <h3>أرسل رسالتك</h3>
+            <div class="frow">
+              <div class="fg">
+                <label for="fullName">الاسم الكامل</label>
+                <input id="fullName" name="fullName" type="text" placeholder="ABDULSAMAD ALSELWI " autocomplete="name" required />
+              </div>
+              <div class="fg">
+                <label for="phone">رقم الهاتف</label>
+                <input id="phone" name="phone" type="tel" placeholder="+967774984145" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="fg">
+              <label for="email">البريد الإلكتروني</label>
+              <input id="email" name="email" type="email" placeholder="alselwiabdulsamad@.com" autocomplete="email" required />
+            </div>
+            <div class="fg">
+              <label for="message">رسالتك</label>
+              <textarea id="message" name="message" placeholder="أخبرنا عن مشروعك..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <span>إرسال الرسالة</span>
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            </button>
+            <p class="form-note"><i class="fas fa-lock" aria-hidden="true"></i> بياناتك محفوظة بأمان تام</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+             <span class="logo-name"> يمن <em> استيل</em></span>
+        <img src="building.png" alt="">
+          </a>
+          <p>شركة رائدة في مجال المقاولات والبناء والتعمير بأعلى معايير الجودة في اليمن.</p>
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&auto=format&fit=crop&q=80" alt="صورة الشركة" class="company-image" />
+        </div>
+        <nav class="footer-nav" aria-label="روابط سريعة">
+          <h4>روابط سريعة</h4>
+          <ul role="list">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="projects.html">أعمالنا</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </nav>
+       <div class="footer-contact">
+          <h4>تواصل معنا</h4>
+          <a href="tel:+967774984145" class="fc-link"><i class="fas fa-phone-alt"></i>+967774984145</a>
+          <a href="mailto:alselwiabdulsamad@gmail.com" class="fc-link"><i class="fas fa-envelope"></i>alselwiabdulsamad@gmail.com</a>
+          <div class="social-links" aria-label="تواصل اجتماعي">
+            <a href="https://www.facebook.com/abdul.samad.othman.al.selwiy" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Abdulsamad27664" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/alseleiy?igsh=MTFubHdtcmZ0bmp2cg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/yourusername" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 يمن استيل للمقاولات. جميع الحقوق محفوظة.</p>
+        <a href="#navbar" class="back-top" aria-label="العودة لأعلى"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
